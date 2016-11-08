@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/less.css">
+</head>
+<style>
+    body,ul,li,a{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .header{
+        width: 100%;
+        height: 40px;
+        background: #444;
+    }
+    .header_medium{
+        width: 976px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .header_medium:after{
+        content: "<广告>";
+        display: block;
+        font-size: 12px;
+        line-height: 40px;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        color: #a8a8aa;
+    }
+    .nav{
+        width: 100%;
+        height: 44px;
+        background: rgba(0,0,0,0.8);
+    }
+    .nav-content{
+        width: 1004px;
+        padding: 0 10px;
+        height: 100%;
+        margin: auto;
+    }
+    .nav-content ul{
+        width: auto;
+        height: 100%;
+    }
+    .nav-content-bag{
+        float: left;
+        margin-right: 75px;
+    }
+    .nav-content-bag a{
+        font-size: 1em;
+        color:#fff;
+        line-height: 44px;
+        text-align: center;
+    }
+    .nav-content-bag a:hover{
+        opacity: 0.8;
+    }
+    .hack1{
+        background-size:360px 200px;
+        background-image: url(img/nike_watch_small.jpg);
+        background-repeat: no-repeat;
+    }
+    .hack2{
+        background-size: 360px 200px;
+        background-image: url(img/airpods_small.jpg);
+        background-repeat: no-repeat;
+    }
+    .hack3{
+        background-size: 360px 200px;
+        background-image: url(img/iphone_upgrade_small.jpg);
+        background-repeat: no-repeat;
+    }
+    .hack4{
+        background-size: 360px 200px;
+        background-image: url(img/accessibility_small.jpg);
+        background-repeat: no-repeat;
+    }
+    @media screen and (min-width:800px){
+        .hack3{
+            background-image: url(img/iphone_upgrade_medium.jpg);
+        }
+        .hack4{
+            background-image: url(img/accessibility_medium.jpg);
+        }
+        .hack2{
+            background-image: url(img/airpods_medium.jpg);
+        }
+        .hack1{
+            background-image: url(img/nike_watch_medium.jpg);
+        }
+    }
+    @media screen and (min-width:1000px){
+        .hack3{
+            background-image: url(img/iphone_upgrade_large.jpg);
+        }
+        .hack4{
+            background-image: url(img/accessibility_large.jpg);
+        }
+        .hack2{
+            background-image: url(img/airpods_large.jpg);
+        }
+        .hack1{
+            background-image: url(img/nike_watch_large.jpg);
+        }
+    }
+    .container{
+        width: 1349px;
+        height: 200px;
+    }
+    .container>.row{
+        height: 100%;
+    }
+    .container>.row>div{
+        height: 100%;
+        border-top: 2px solid #fff;
+        border-right: 2px solid #fff;
+    }
+    .banner{
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+    .imgbox{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .imgbox-1{
+        background: url(img/macbookpro_portrait_small.jpg);
+        background-repeat: no-repeat;
+    }
+    .imgbox-2{
+        background: url(img/iphone_square_large.jpg);
+        background-repeat: no-repeat;
+    }
+    .imgbox-3{
+        background: url(img/event_small.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0%;
+        background-position: 50% 38%;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="header_medium"></div>
+</div>
+<div class="nav">
+    <div class="nav-content">
+        <ul>
+            <li class="nav-content-bag"><a href="">apple</a></li>
+            <li class="nav-content-bag"><a href="">Mac</a></li>
+            <li class="nav-content-bag"><a href="">iPad</a></li>
+            <li class="nav-content-bag"><a href="">iPhone</a></li>
+            <li class="nav-content-bag"><a href="">Watch</a></li>
+            <li class="nav-content-bag"><a href="">Music</a></li>
+            <li class="nav-content-bag"><a href="">技术支持</a></li>
+            <li class="nav-content-bag"><a href="">搜索</a></li>
+            <li class="nav-content-bag" style="margin:0"><a href="">购物袋</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="imgbox imgbox-1"></div>
+    <div class="imgbox imgbox-2"></div>
+    <div class="imgbox imgbox-3"></div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-l-3 col-m-6 col-s-12 hack1"></div>
+        <div class="col-l-3 col-m-6 col-s-12 hack2"></div>
+        <div class="col-l-3 col-m-6 col-s-12 hack3"></div>
+        <div class="col-l-3 col-m-6 col-s-12 hack4"></div>
+    </div>
+</div>
+</body>
+</html>
